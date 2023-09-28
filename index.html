@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <!--Shamelessly stole from w3-->
+    <head>
+        <style>
+        body {margin:0;}
+        * {
+            box-sizing: border-box;
+        }
+        ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+          position: fixed;
+          top: 0;
+          width: 100%;
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+        
+        li a:hover:not(.active) {
+          background-color: #111;
+        }
+        
+        .active {
+          background-color: #04AA6D;
+        }
+        .column {
+            float: left;
+            width: 50%;
+            background-color: black;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        </style>
+        </head>
+    <body>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="ada.html">Ada</a></li>
+            <li><a href="kepler.html">Kepler</a></li>
+            <li><a href="nicky.html">Nicky</a></li>
+        </ul>
+        <div style="padding:20px;margin-top:30px;background-color:#ff0000;height:100px;">
+        <title>About Noah &#40;But mostly his cats&#41;</title>
+        <h1>About Noah</h1>
+        </div>
+        <div class="row">
+        <div class="column">
+            <p style="color: white;">Noah is a human</p>
+        </div>
+        <div class="column">
+            <p style="color:white;">Noah hates pictures</p>
+        </div>
+        </div>
+    </body>
+</html>
