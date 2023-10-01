@@ -4,7 +4,9 @@
     <head>
         <style>
         body {margin:0;}
-        
+        * {
+            box-sizing: border-box;
+        }
         ul {
           list-style-type: none;
           margin: 0;
@@ -35,6 +37,17 @@
         .active {
           background-color: #04AA6D;
         }
+        .column {
+            float: left;
+            width: 50%;
+            background-color: black;
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
         </style>
         </head>
     <body>
@@ -44,10 +57,20 @@
             <li><a href="kepler.html">Kepler</a></li>
             <li><a href="nicky.html">Nicky</a></li>
         </ul>
-        <div style="padding:20px;margin-top:30px;background-color:#ff0000;height:1500px;">
+        <div style="padding:20px;margin-top:30px;background-color:#ff0000;height:100px;">
         <title>About Noah &#40;But mostly his cats&#41;</title>
         <h1>About Kepler</h1>
-
+      </div>
+      <div class="row">
+      <div class="column">
+          <p style="color: white;">
+            Kepler is a male seal-point pure-bred siamese cat.
+          </p>
+      </div>
+      <div class="column">
+          <img src="IMG_0008.jpeg" alt="Kepler">
+      </div>
+      </div>
         </div>
     </body>
 </html>
